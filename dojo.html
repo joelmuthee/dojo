@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Wellness Club | Premium Lifestyle</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Dojo Wellness Club | Premium Lifestyle">
+    <meta name="description"
+        content="Functional fitness. Natural movement. Elite recovery. We don't use machines. We build them. Experience holistic wellness in Karen, Nairobi.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dojokenya.com/">
+    <meta property="og:title" content="Dojo Wellness Club | Premium Lifestyle">
+    <meta property="og:description"
+        content="Functional fitness. Natural movement. Elite recovery. We don't use machines. We build them. Experience holistic wellness in Karen, Nairobi.">
+    <meta property="og:image" content="https://www.dojokenya.com/dojo-logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.dojokenya.com/">
+    <meta property="twitter:title" content="Dojo Wellness Club | Premium Lifestyle">
+    <meta property="twitter:description"
+        content="Functional fitness. Natural movement. Elite recovery. We don't use machines. We build them. Experience holistic wellness in Karen, Nairobi.">
+    <meta property="twitter:image" content="https://www.dojokenya.com/dojo-logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Sharp, elegant typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Outfit:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dojoRed: '#c1272d',
+                        dojoBlack: '#0d0d0d',
+                        dojoDark: '#1a1a1a',
+                        dojoGray: '#999999'
+                    },
+                    fontFamily: {
+                        sans: ['"Outfit"', 'sans-serif'],
+                        serif: ['"Cinzel"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="dojo.css">
+</head>
+
+<body class="bg-dojoBlack text-white antialiased overflow-x-hidden selection:bg-dojoRed selection:text-white">
+
+    <!-- Elegant Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-5 flex justify-between items-center transition-all duration-300"
+        id="navbar">
+        <a href="#" class="flex items-center gap-3">
+            <img src="dojo-logo.png" alt="Dojo Wellness Club Logo"
+                class="h-10 md:h-12 object-contain brightness-0 invert" />
+        </a>
+
+        <div class="hidden md:flex gap-10 font-sans text-xs uppercase tracking-[0.2em] text-white/80 font-medium">
+            <a href="#move" class="hover:text-dojoRed transition-colors">Move</a>
+            <a href="#repair" class="hover:text-dojoRed transition-colors">Repair</a>
+            <a href="#revive" class="hover:text-dojoRed transition-colors">Revive</a>
+        </div>
+
+        <button onclick="openModal()"
+            class="bg-dojoRed hover:bg-white text-white hover:text-dojoBlack px-6 py-3 font-sans font-medium uppercase tracking-widest text-xs transition-colors duration-300">
+            Book Now
+        </button>
+    </nav>
+
+    <!-- Refined Hero Section -->
+    <header class="relative min-h-[100svh] flex flex-col justify-end pb-8 md:pb-12 overflow-hidden px-6 pt-32">
+        <!-- Background Image with Pulse Animation -->
+        <div class="absolute inset-0 z-0 bg-dojoBlack">
+            <img src="hero_bg.webp" alt="Dojo Workout Class"
+                class="w-full h-full object-cover animate-pulse-bg opacity-60" />
+            <!-- Gradient Overlay for pure legibility and depth -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/95"></div>
+        </div>
+
+        <!-- Center Composed Hero Content -->
+        <div class="relative z-10 w-full px-6 text-center max-w-4xl mx-auto mt-20">
+            <!-- Subtle category top ribbon -->
+            <p
+                class="font-sans text-dojoRed uppercase tracking-[0.3em] text-xs font-semibold mb-6 animate-fade-in opacity-0 inline-block px-4 py-1 border border-dojoRed/30 rounded-full bg-dojoRed/10 backdrop-blur-sm">
+                Nairobi's Premier Wellness Hub
+            </p>
+
+            <h1
+                class="font-serif text-5xl md:text-7xl lg:text-8xl leading-tight mb-8 animate-fade-in opacity-0 delay-100 mix-blend-screen drop-shadow-lg">
+                FUNCTIONAL <br>
+                <span class="italic text-white">FITNESS</span> & <br>
+                RECOVERY
+            </h1>
+
+            <p
+                class="font-sans text-dojoGray font-light text-base md:text-lg max-w-2xl mx-auto mb-12 animate-fade-in opacity-0 delay-200">
+                Functional fitness. Natural movement. Elite recovery. We don't use machines. We build them. Experience
+                holistic wellness in
+                Karen.
+            </p>
+
+            <div class="flex justify-center items-center animate-fade-in opacity-0 delay-300">
+                <button onclick="openModal()"
+                    class="bg-dojoRed hover:bg-white text-white hover:text-dojoBlack px-10 py-5 font-sans uppercase tracking-[0.15em] text-xs font-semibold transition-all duration-300 flex items-center justify-center gap-4 w-full sm:w-auto min-w-[300px]">
+                    Start Your Journey
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- The 3 Pillars (Move, Repair, Revive) - Premium Gallery Layout -->
+    <main class="relative bg-dojoBlack z-20 pb-32">
+
+        <!-- Central Introduction -->
+        <section class="py-24 px-6 md:px-12 max-w-5xl mx-auto text-center reveal-up">
+            <h2 class="font-serif text-3xl md:text-4xl text-white mb-6">THE DOJO PHILOSOPHY</h2>
+            <div class="w-12 h-[1px] bg-dojoRed mx-auto mb-8"></div>
+            <p class="font-sans text-dojoGray font-light text-lg lg:text-xl leading-relaxed">
+                By blending combat sports, functional training, and elite recovery modalities under one roof, we empower
+                you to unlock your ultimate potential. Move dynamically, repair intelligently, and revive completely.
+            </p>
+        </section>
+
+        <!-- Pillar 1: MOVE -->
+        <section id="move" class="relative py-20 px-6 lg:px-20 border-t border-white/5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative group overflow-hidden bg-dojoDark border border-dojoRed/30 hover:border-dojoRed/60 transition-colors reveal-up"
+                    style="transition-delay: 100ms;">
+                    <div
+                        class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-700 z-10">
+                    </div>
+                    <img src="hero_bg.webp" alt="Move Pillar"
+                        class="w-full aspect-square md:aspect-[4/3] object-cover transition-transform duration-1000 group-hover:scale-105" />
+                </div>
+                <!-- Content -->
+                <div class="lg:px-10 reveal-up text-center lg:text-left flex flex-col items-center lg:items-start"
+                    style="transition-delay: 200ms;">
+                    <span class="font-sans text-dojoRed text-xs tracking-[0.3em] uppercase mb-4 block font-semibold">01
+                        // Peak Performance</span>
+                    <h2 class="font-serif text-5xl mb-8">MOVE.</h2>
+                    <p class="font-sans text-dojoGray font-light text-lg mb-8 leading-relaxed">
+                        Yoga. Boxing. Pilates. Spin. Engaging group classes focused on body-weight and functional
+                        fitness. Discover your raw strength.
+                    </p>
+                    <ul class="font-sans space-y-4 mb-10 text-sm tracking-wide text-white/80 text-left">
+                        <li class="flex items-start gap-4"><i class="fa-solid fa-check text-dojoRed mt-1"></i> 15+
+                            Specialized Class Types</li>
+                        <li class="flex items-start gap-4"><i class="fa-solid fa-check text-dojoRed mt-1"></i> Elite
+                            Personal Training Coaching</li>
+                        <li class="flex items-start gap-4"><i class="fa-solid fa-check text-dojoRed mt-1"></i>
+                            Functional Combat Sports Array</li>
+                    </ul>
+                    <a href="#"
+                        class="font-sans text-xs font-semibold tracking-[0.2em] text-white hover:text-dojoRed uppercase flex items-center justify-center lg:justify-start gap-3 transition-colors mt-2">
+                        View Full Timetable <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pillar 2: REPAIR -->
+        <section id="repair" class="relative py-20 px-6 lg:px-20 bg-dojoDark border-y border-white/5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 lg:pr-10 reveal-up text-center lg:text-left flex flex-col items-center lg:items-start"
+                    style="transition-delay: 200ms;">
+                    <span class="font-sans text-dojoRed text-xs tracking-[0.3em] uppercase mb-4 block font-semibold">02
+                        // Optimal Recovery</span>
+                    <h2 class="font-serif text-5xl mb-8">REPAIR.</h2>
+                    <p class="font-sans text-dojoGray font-light text-lg mb-10 leading-relaxed">
+                        Damage mitigation and structural integrity rebuilding. Our chartered physiotherapists and elite
+                        masseuses design customized recovery protocols.
+                    </p>
+
+                    <!-- Premium Lead Gen Box -->
+                    <div class="bg-black/40 border border-dojoRed/30 p-8 hover:border-dojoRed/60 transition-colors cursor-pointer group rounded-sm w-full max-w-md text-left"
+                        onclick="openModal()">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="font-sans text-base font-medium tracking-[0.1em] text-white pr-4">Request Physio
+                                Assessment</h3>
+                            <div
+                                class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-dojoRed transition-colors flex-shrink-0">
+                                <i class="fa-solid fa-arrow-right text-white text-xs"></i>
+                            </div>
+                        </div>
+                        <p class="font-sans text-sm text-dojoGray font-light mb-4">Powered by our automated booking
+                            system for immediate confirmation.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-[10px] uppercase tracking-widest bg-white/10 px-2 py-1 text-white/60">Sports
+                                Massage</span>
+                            <span
+                                class="text-[10px] uppercase tracking-widest bg-white/10 px-2 py-1 text-white/60">Physiotherapy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 relative group overflow-hidden bg-black border border-dojoRed/30 hover:border-dojoRed/60 transition-colors reveal-up"
+                    style="transition-delay: 100ms;">
+                    <div
+                        class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-colors duration-700 z-10">
+                    </div>
+                    <img src="repair_bg.webp" alt="Repair Pillar"
+                        class="w-full aspect-square md:aspect-[4/3] object-cover transition-transform duration-1000 group-hover:scale-105 filter saturate-50 group-hover:saturate-100" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Pillar 3: REVIVE -->
+        <section id="revive" class="relative py-24 px-6 lg:px-20 text-center reveal-up">
+            <div class="max-w-4xl mx-auto">
+                <span class="font-sans text-dojoRed text-xs tracking-[0.3em] uppercase mb-4 block font-semibold">03 //
+                    The Zen Zone</span>
+                <h2 class="font-serif text-6xl md:text-7xl mb-10">REVIVE.</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    <div
+                        class="p-8 border border-dojoRed/30 bg-dojoDark/50 hover:bg-dojoDark hover:border-dojoRed/60 transition-colors">
+                        <i class="fa-solid fa-temperature-three-quarters text-3xl text-dojoRed mb-4"></i>
+                        <h3 class="font-sans text-lg font-medium tracking-widest uppercase mb-2">Thermal</h3>
+                        <p class="font-sans text-dojoGray text-sm font-light">Luxury His & Hers Sauna and Steam Rooms.
+                        </p>
+                    </div>
+                    <div
+                        class="p-8 border border-dojoRed/30 bg-dojoDark/50 hover:bg-dojoDark hover:border-dojoRed/60 transition-colors">
+                        <i class="fa-solid fa-leaf text-3xl text-dojoRed mb-4"></i>
+                        <h3 class="font-sans text-lg font-medium tracking-widest uppercase mb-2">Meditation</h3>
+                        <p class="font-sans text-dojoGray text-sm font-light">Secluded Alfresco Zen Garden built for
+                            inner reflection.</p>
+                    </div>
+                    <div
+                        class="p-8 border border-dojoRed/30 bg-dojoDark/50 hover:bg-dojoDark hover:border-dojoRed/60 transition-colors">
+                        <i class="fa-solid fa-blender text-3xl text-dojoRed mb-4"></i>
+                        <h3 class="font-sans text-lg font-medium tracking-widest uppercase mb-2">Nutrition</h3>
+                        <p class="font-sans text-dojoGray text-sm font-light">Organic, plant-based power smoothies and
+                            health bar.</p>
+                    </div>
+                </div>
+                <button onclick="openModal()"
+                    class="bg-transparent border border-white text-white hover:bg-white hover:text-black px-12 py-4 font-sans font-medium uppercase tracking-[0.15em] text-xs transition-colors">
+                    Inquire About Membership
+                </button>
+            </div>
+        </section>
+
+        <!-- Social Proof / Reviews Slider -->
+        <section class="relative py-24 px-6 lg:px-20 bg-dojoDark border-t border-white/5 overflow-hidden reveal-up">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <span
+                        class="font-sans text-dojoRed text-xs tracking-[0.3em] uppercase mb-4 block font-semibold">Community</span>
+                    <h2 class="font-serif text-4xl text-white">WHAT THEY SAY</h2>
+                </div>
+
+                <div class="swiper reviewsSwiper pb-16">
+                    <div class="swiper-wrapper">
+                        <!-- Review 1 -->
+                        <div class="swiper-slide h-auto">
+                            <div
+                                class="bg-white rounded-2xl shadow-lg p-6 h-full flex flex-col font-sans transition-transform hover:-translate-y-1">
+                                <div class="flex justify-between items-start mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-[#1da0f2] flex items-center justify-center text-white text-lg font-medium">
+                                            M</div>
+                                        <div>
+                                            <p class="text-sm font-semibold text-gray-900 leading-tight">Murtaza Badri
+                                            </p>
+                                            <p class="text-[11px] text-gray-500 mt-0.5">Local Guide · 315 reviews</p>
+                                        </div>
+                                    </div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                        alt="Google" class="w-5 h-5">
+                                </div>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="flex text-[#fbbc04] text-[10px] gap-0.5">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="text-[11px] text-gray-500">3 months ago</span>
+                                </div>
+                                <p class="text-[#3c4043] font-normal text-[13px] leading-relaxed flex-grow">
+                                    One of the best there is Nairobi. Wellness excelled! The interior warmth and the
+                                    whole setting is a 12/10!<br>Tried the coffee and avocado toast which so wholesome
+                                    prepared on Gluten free bread.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="swiper-slide h-auto">
+                            <div
+                                class="bg-white rounded-2xl shadow-lg p-6 h-full flex flex-col font-sans transition-transform hover:-translate-y-1">
+                                <div class="flex justify-between items-start mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-[#ea4335] flex items-center justify-center text-white text-lg font-medium">
+                                            J</div>
+                                        <div>
+                                            <p class="text-sm font-semibold text-gray-900 leading-tight">Jane Rae</p>
+                                            <p class="text-[11px] text-gray-500 mt-0.5">1 review</p>
+                                        </div>
+                                    </div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                        alt="Google" class="w-5 h-5">
+                                </div>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="flex text-[#fbbc04] text-[10px] gap-0.5">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="text-[11px] text-gray-500">3 months ago</span>
+                                </div>
+                                <p class="text-[#3c4043] font-normal text-[13px] leading-relaxed flex-grow">
+                                    Dojo is food for the soul! Set in a beautiful vegetable garden, filled with stunning
+                                    birds. From the friendly reception team who make you feel like you belong to the
+                                    incredible array of classes for all levels and needs.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="swiper-slide h-auto">
+                            <div
+                                class="bg-white rounded-2xl shadow-lg p-6 h-full flex flex-col font-sans transition-transform hover:-translate-y-1">
+                                <div class="flex justify-between items-start mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-[#34a853] flex items-center justify-center text-white text-lg font-medium">
+                                            S</div>
+                                        <div>
+                                            <p class="text-sm font-semibold text-gray-900 leading-tight">Simon Phillips
+                                            </p>
+                                            <p class="text-[11px] text-gray-500 mt-0.5">Local Guide · 29 reviews</p>
+                                        </div>
+                                    </div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                        alt="Google" class="w-5 h-5">
+                                </div>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="flex text-[#fbbc04] text-[10px] gap-0.5">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="text-[11px] text-gray-500">4 weeks ago</span>
+                                </div>
+                                <p class="text-[#3c4043] font-normal text-[13px] leading-relaxed flex-grow">
+                                    Dojo is a phenomenal gym! Great staff, classes and facilities. It's been my home
+                                    away from home when I'm in Nairobi
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Review 4 -->
+                        <div class="swiper-slide h-auto">
+                            <div
+                                class="bg-white rounded-2xl shadow-lg p-6 h-full flex flex-col font-sans transition-transform hover:-translate-y-1">
+                                <div class="flex justify-between items-start mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-[#fbbc04] flex items-center justify-center text-white text-lg font-medium">
+                                            K</div>
+                                        <div>
+                                            <p class="text-sm font-semibold text-gray-900 leading-tight">Katya Nyangi
+                                            </p>
+                                            <p class="text-[11px] text-gray-500 mt-0.5">Local Guide · 112 reviews</p>
+                                        </div>
+                                    </div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                        alt="Google" class="w-5 h-5">
+                                </div>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="flex text-[#fbbc04] text-[10px] gap-0.5">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="text-[11px] text-gray-500">a year ago</span>
+                                </div>
+                                <p class="text-[#3c4043] font-normal text-[13px] leading-relaxed flex-grow">
+                                    Laid out in a way that keeps air well ventilated and does not feel cluttered by
+                                    equipment. Padel available. Clean. Healthy foods cafe. Steam, sauna and towels.
+                                    WiFi. Good variety of classes. Very friendly staff.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Review 5 -->
+                        <div class="swiper-slide h-auto">
+                            <div
+                                class="bg-white rounded-2xl shadow-lg p-6 h-full flex flex-col font-sans transition-transform hover:-translate-y-1">
+                                <div class="flex justify-between items-start mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-[#673ab7] flex items-center justify-center text-white text-lg font-medium">
+                                            N</div>
+                                        <div>
+                                            <p class="text-sm font-semibold text-gray-900 leading-tight">Nadine
+                                                Happiness Safari</p>
+                                            <p class="text-[11px] text-gray-500 mt-0.5">Local Guide · 55 reviews</p>
+                                        </div>
+                                    </div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                        alt="Google" class="w-5 h-5">
+                                </div>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="flex text-[#fbbc04] text-[10px] gap-0.5">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="text-[11px] text-gray-500">a year ago</span>
+                                </div>
+                                <p class="text-[#3c4043] font-normal text-[13px] leading-relaxed flex-grow">
+                                    I just love the Dojo, I am there at least once per week and Maggie and Nelly are the
+                                    best massage therapists in Nairobi if not Kenya. The facilities are beautiful, the
+                                    staff is so friendly.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Review 6 -->
+                        <div class="swiper-slide h-auto">
+                            <div
+                                class="bg-white rounded-2xl shadow-lg p-6 h-full flex flex-col font-sans transition-transform hover:-translate-y-1">
+                                <div class="flex justify-between items-start mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-[#ff4081] flex items-center justify-center text-white text-lg font-medium">
+                                            G</div>
+                                        <div>
+                                            <p class="text-sm font-semibold text-gray-900 leading-tight">Gabriella Fox
+                                            </p>
+                                            <p class="text-[11px] text-gray-500 mt-0.5">1 review</p>
+                                        </div>
+                                    </div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                        alt="Google" class="w-5 h-5">
+                                </div>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="flex text-[#fbbc04] text-[10px] gap-0.5">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="text-[11px] text-gray-500">5 years ago</span>
+                                </div>
+                                <p class="text-[#3c4043] font-normal text-[13px] leading-relaxed flex-grow">
+                                    Dojo has to be one of the most beautiful gyms in Kenya. The classes are great, the
+                                    spa is so relaxing and the cafe has the most delicious treats.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Elegant Custom Navigation & Pagination specific to this section -->
+                    <div class="flex gap-4 justify-center mt-12 mb-4">
+                        <button
+                            class="swiper-button-prev-custom w-12 h-12 bg-[#222] border border-white/10 hover:border-dojoRed hover:bg-dojoRed flex justify-center items-center transition-colors text-white rounded-full shadow-lg">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button
+                            class="swiper-button-next-custom w-12 h-12 bg-[#222] border border-white/10 hover:border-dojoRed hover:bg-dojoRed flex justify-center items-center transition-colors text-white rounded-full shadow-lg">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="swiper-pagination !bottom-0 pb-2"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Refined Footer -->
+    <footer class="bg-black border-t border-white/10 pt-20 pb-10 px-6 lg:px-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 font-sans text-center md:text-left">
+            <div class="flex flex-col items-center md:items-start">
+                <img src="dojo-logo.png" alt="Dojo Logo" class="h-10 mb-6 opacity-80 brightness-0 invert" />
+                <p class="text-dojoGray font-light text-sm mb-6 leading-relaxed">
+                    A holistic lifestyle and wellness center located in Karen. Brought to you by the makers of The
+                    Talisman Restaurant.
+                </p>
+                <div class="flex gap-3 justify-center md:justify-start">
+                    <a href="https://www.instagram.com/dojokenya/" target="_blank" rel="noopener noreferrer"
+                        class="w-10 h-10 rounded-full border border-dojoRed flex items-center justify-center hover:bg-dojoRed hover:text-white transition-colors text-dojoRed"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/dojokenya/" target="_blank" rel="noopener noreferrer"
+                        class="w-10 h-10 rounded-full border border-dojoRed flex items-center justify-center hover:bg-dojoRed hover:text-white transition-colors text-dojoRed"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="md:px-8">
+                <h4 class="text-xs uppercase font-semibold tracking-widest text-white mb-6">Contact Us</h4>
+                <a href="tel:0742834747" class="block text-xl hover:text-dojoRed mb-2 transition-colors font-light">0742
+                    834 747</a>
+                <a href="mailto:hello@dojokenya.com"
+                    class="block text-dojoGray hover:text-white transition-colors text-sm mb-6 font-light">hello@dojokenya.com</a>
+                <p class="text-sm font-light text-dojoGray leading-relaxed">
+                    320 Ngong Road, Karen<br>Nairobi, Kenya<br>
+                    <a href='https://www.google.com/maps/place/Dojo+Wellness+Club/@-1.323141,36.703965,14z/data=!4m6!3m5!1s0x182f1b9e9f61b585:0xd4cc4f8984a86765!8m2!3d-1.3222749!4d36.7037376!16s%2Fg%2F11h1k12thy?hl=en&entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D'
+                        target='_blank'
+                        class='inline-block mt-2 text-dojoRed hover:text-white transition-colors border-b border-dojoRed hover:border-white pb-0.5 text-xs font-medium uppercase tracking-widest'>
+                        View on Map <i class="fa-solid fa-location-arrow text-[10px] ml-1"></i>
+                    </a>
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-xs uppercase font-semibold tracking-widest text-white mb-6">Operating Hours</h4>
+                <div class="flex justify-between border-b border-white/10 pb-3 mb-3 text-sm font-light">
+                    <span class="text-dojoGray">Monday - Friday</span>
+                    <span class="text-white">7:00 AM - 8:30 PM</span>
+                </div>
+                <div class="flex justify-between border-b border-white/10 pb-3 text-sm font-light">
+                    <span class="text-dojoGray">Saturday - Sunday</span>
+                    <span class="text-white">8:00 AM - 6:30 PM</span>
+                </div>
+            </div>
+        </div>
+        <div
+            class="flex flex-col md:flex-row justify-between items-center text-xs text-white/40 font-sans border-t border-white/5 pt-8 font-light tracking-wide">
+            <p>&copy; 2026 Dojo Wellness Club. All rights reserved.</p>
+            <p class="mt-4 md:mt-0">Powered by <a href="https://essenceautomations.com" target="_blank"
+                    class="text-dojoRed hover:text-white transition-colors font-medium">Essence Automations</a></p>
+        </div>
+    </footer>
+
+    <!-- Premium Lead Capture Modal (Full Registration) -->
+    <div id="popupBook"
+        class="fixed inset-0 z-[100] bg-dojoBlack/95 backdrop-blur-md hidden overflow-y-auto px-4 py-8 sm:px-6 sm:py-16 transition-all duration-500">
+        <div class="bg-dojoDark border border-white/10 p-8 sm:p-12 max-w-2xl w-full relative shadow-2xl mx-auto">
+            <button onclick="closeModal()"
+                class="absolute top-6 right-6 text-dojoGray hover:text-white transition-colors z-10">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <div class="text-center mb-8">
+                <img src="dojo-logo.png" alt="Dojo Logo" class="h-10 mx-auto mb-4 brightness-0 invert" />
+                <h3 class="font-sans text-xs uppercase tracking-[0.2em] text-white">New Customer Registration</h3>
+                <a href="#"
+                    class="inline-block mt-4 font-sans text-xs uppercase tracking-widest text-dojoRed hover:text-white border-b border-dojoRed hover:border-white pb-0.5 transition-colors">Please
+                    See Our Waiver</a>
+            </div>
+
+            <form class="space-y-6 font-sans">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="First Name *"
+                        class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors placeholder:text-dojoGray text-white"
+                        required>
+                    <input type="text" placeholder="Last Name *"
+                        class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors placeholder:text-dojoGray text-white"
+                        required>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="tel" placeholder="Mobile Phone Number *"
+                        class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors placeholder:text-dojoGray text-white"
+                        required>
+                    <input type="tel" placeholder="Emergency Phone Number *"
+                        class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors placeholder:text-dojoGray text-white"
+                        required>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Date of Birth (dd/mm/yyyy)"
+                        class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors placeholder:text-dojoGray text-white transition-opacity">
+                    <select
+                        class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors text-dojoGray [&>option]:bg-dojoDark appearance-none cursor-pointer">
+                        <option value="">Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="space-y-4 pt-4">
+                    <select
+                        class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors text-dojoGray [&>option]:bg-dojoDark appearance-none cursor-pointer">
+                        <option value="">Where do you live?</option>
+                        <option value="karen">Karen</option>
+                        <option value="kilimani">Kilimani</option>
+                        <option value="lavington">Lavington</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <select
+                        class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors text-dojoGray [&>option]:bg-dojoDark appearance-none cursor-pointer">
+                        <option value="">Which area of wellness are you most interested in?</option>
+                        <option value="move">Move (Fitness & Combat)</option>
+                        <option value="repair">Repair (Physio & Massage)</option>
+                        <option value="revive">Revive (Sauna & Nutrition)</option>
+                    </select>
+
+                    <select
+                        class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors text-dojoGray [&>option]:bg-dojoDark appearance-none cursor-pointer">
+                        <option value="">How did you hear about Dojo?</option>
+                        <option value="social">Social Media</option>
+                        <option value="friend">Friend / Family</option>
+                        <option value="talisman">The Talisman Restaurant</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Consents -->
+                <div class="space-y-5 pt-4 text-xs font-light text-white/80">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <span>Do you consent to receiving information from Dojo?</span>
+                        <div class="flex gap-4">
+                            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="info"
+                                    value="yes" class="accent-dojoRed"> Yes</label>
+                            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="info"
+                                    value="no" class="accent-dojoRed" checked> No</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <span>You understand and agree to the waiver linked above</span>
+                        <div class="flex gap-4">
+                            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="waiver"
+                                    value="yes" class="accent-dojoRed"> Yes</label>
+                            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="waiver"
+                                    value="no" class="accent-dojoRed" checked> No</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <span>I accept Dojo <a href="#" class="text-dojoRed hover:text-white underline">terms and
+                                conditions</a></span>
+                        <div class="flex gap-4">
+                            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="tc_dojo"
+                                    value="yes" class="accent-dojoRed"> Yes</label>
+                            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="tc_dojo"
+                                    value="no" class="accent-dojoRed" checked> No</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <span>I accept the Sports Booker <a href="#"
+                                class="text-dojoRed hover:text-white underline">terms and conditions</a></span>
+                        <div class="flex gap-4">
+                            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="tc_sports"
+                                    value="yes" class="accent-dojoRed"> Yes</label>
+                            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="tc_sports"
+                                    value="no" class="accent-dojoRed" checked> No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Account Credentials -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                    <input type="email" placeholder="Enter your email address"
+                        class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors placeholder:text-dojoGray text-white">
+                    <input type="email" placeholder="Confirm your email address"
+                        class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors placeholder:text-dojoGray text-white">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="password" placeholder="Enter a password"
+                        class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors placeholder:text-dojoGray text-white">
+                    <input type="password" placeholder="Confirm your password"
+                        class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors placeholder:text-dojoGray text-white">
+                </div>
+                <p class="text-[10px] text-dojoGray font-light text-center px-4">
+                    Your password must contain more than seven characters, including at least one number, one letter and
+                    a special character (do not use quotation marks or apostrophes for your special character).
+                </p>
+
+                <div class="grid grid-cols-2 gap-4 pt-4">
+                    <!-- Action Buttons -->
+                    <button type="button"
+                        class="w-full bg-dojoDark border border-white/20 hover:border-white text-white py-4 font-medium uppercase tracking-[0.15em] text-xs transition-colors duration-300"
+                        onclick="closeModal()">
+                        Cancel
+                    </button>
+                    <button type="button"
+                        class="w-full bg-dojoRed hover:bg-white text-white hover:text-dojoBlack py-4 font-medium uppercase tracking-[0.15em] text-xs transition-colors duration-300">
+                        Continue
+                    </button>
+                </div>
+
+                <div class="border-t border-white/10 mt-8 pt-8 pb-4">
+                    <h4 class="text-center text-xs uppercase tracking-[0.2em] font-medium text-white mb-6">Existing
+                        Customer Login</h4>
+                    <div class="grid grid-cols-1 gap-4 max-w-sm mx-auto">
+                        <input type="email" placeholder="Enter your login or email"
+                            class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors placeholder:text-dojoGray text-white">
+                        <input type="password" placeholder="Enter your password"
+                            class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-sm font-light focus:outline-none focus:border-dojoRed transition-colors placeholder:text-dojoGray text-white">
+                        <button type="button"
+                            class="w-full bg-dojoDark border border-white/20 hover:border-dojoRed hover:text-dojoRed text-white py-4 mt-2 font-medium uppercase tracking-[0.15em] text-xs transition-colors duration-300">
+                            Login
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper Reviews
+        const swiper = new Swiper('.reviewsSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next-custom',
+                prevEl: '.swiper-button-prev-custom',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+
+        // Smooth Sticky Navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 30) {
+                nav.classList.add('bg-dojoBlack/95', 'backdrop-blur-sm', 'border-b', 'border-white/5', 'shadow-lg');
+                nav.classList.remove('py-5');
+                nav.classList.add('py-4');
+            } else {
+                nav.classList.remove('bg-dojoBlack/95', 'backdrop-blur-sm', 'border-b', 'border-white/5', 'shadow-lg');
+                nav.classList.add('py-5');
+                nav.classList.remove('py-4');
+            }
+        });
+
+        // Global Modal Controls
+        window.openModal = function () {
+            document.getElementById('popupBook').classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        };
+
+        window.closeModal = function () {
+            document.getElementById('popupBook').classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        };
+
+        // Modal Backdrop Click Dismiss
+        document.getElementById('popupBook').addEventListener('click', function (e) {
+            if (e.target === this) {
+                window.closeModal();
+            }
+        });
+
+        // Bidirectional Scroll Reveal Observer
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                } else {
+                    // Remove class when scrolling out of view to make it truly bidirectional
+                    entry.target.classList.remove('is-visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-up').forEach((el) => {
+            revealObserver.observe(el);
+        });
+    </script>
+</body>
+
+</html>
