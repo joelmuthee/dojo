@@ -775,8 +775,8 @@
         // Bidirectional Scroll Reveal Observer
         const observerOptions = {
             root: null,
-            rootMargin: '0px',
-            threshold: 0.15
+            rootMargin: '0px 0px -50px 0px', // Trigger slightly before it hits the viewport
+            threshold: 0.05 // Lower threshold for mobile reliability
         };
 
         const revealObserver = new IntersectionObserver((entries) => {
