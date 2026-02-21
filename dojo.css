@@ -103,6 +103,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent);
 }
+
 /* Bidirectional Fade-In Up */
 .reveal-up {
     opacity: 0;
@@ -114,4 +115,47 @@ body {
 .reveal-up.is-visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Hero Slider Ken Burns Effect */
+.active-zoom {
+    transform: scale(1.15);
+    transition: transform 10s ease-out;
+}
+
+.swiper-slide-active .active-zoom {
+    transform: scale(1);
+}
+
+/* Ensure fade effect works well with background */
+.heroSwiper {
+    background: #000;
+}
+
+.heroSwiper .swiper-slide {
+    background: #000;
+}
+
+/* Legibility Booster */
+.drop-shadow-md {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.drop-shadow-lg {
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Custom Swiper Pagination */
+.swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.3) !important;
+    opacity: 1 !important;
+    width: 6px !important;
+    height: 6px !important;
+    transition: all 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--accent) !important;
+    width: 24px !important;
+    border-radius: 4px !important;
 }
