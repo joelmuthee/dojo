@@ -159,3 +159,87 @@ body {
     width: 24px !important;
     border-radius: 4px !important;
 }
+
+/* Interactive Wellness Suite Styles */
+.suite-tabs-container {
+    display: inline-flex;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px;
+    border-radius: 100px;
+    backdrop-filter: blur(10px);
+}
+
+.suite-tab {
+    padding: 0.8rem 2.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Outfit', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.suite-tab:hover:not(.active) {
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.suite-tab.active {
+    background: white;
+    color: black;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.suite-tab.active span {
+    color: black !important;
+    opacity: 0.6;
+}
+
+.int-btn.active {
+    border-color: var(--accent) !important;
+    background: rgba(193, 39, 45, 0.1);
+    color: var(--accent);
+}
+
+.dojo-divider {
+    height: 1px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(90deg,
+            rgba(193, 39, 45, 0) 0%,
+            rgba(193, 39, 45, 0.5) 20%,
+            rgba(193, 39, 45, 1) 50%,
+            rgba(193, 39, 45, 0.5) 80%,
+            rgba(193, 39, 45, 0) 100%);
+    position: relative;
+    opacity: 0.4;
+}
+
+.dojo-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 2px;
+    background: var(--accent);
+    filter: blur(4px);
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .suite-tab {
+        padding: 0.6rem 1.2rem;
+        min-width: 120px;
+    }
+
+    .suite-tab span {
+        font-size: 7px;
+    }
+}
